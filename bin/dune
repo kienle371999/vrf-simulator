@@ -1,0 +1,4 @@
+(executable
+ (public_name vrf_simulator)
+ (name main)
+ (libraries vrf_simulator))
