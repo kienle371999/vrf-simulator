@@ -1,14 +1,26 @@
 open Vrf_simulator;;
-(* open Base64;; *)
 
-let res = Ecdsa_signature.signed_message
+let secret_key = Ed25519_signature.secret_to_public_key (Bytes.of_string "Hello my name is Hehe Hello my n")
 
-let () = print_bytes res
+let seed = "hihihihihidddddddddddddddddddddeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
 
-let extra_res = Ecdsa_signature.valid_message
+let teta = 32
 
-let () = print_endline (string_of_bool extra_res)
+let roll = 20
 
-(* let extra_res = Rsa_signature.plain_message
+let total_rolls = 40
 
-let () = print_endline (Cstruct.to_string extra_res) *)
+let role = "proposer" 
+
+
+let (number_of_rolls, hash) = 
+Roll_selection_formula.select_roll_of_each_node secret_key seed teta role roll total_rolls
+
+let () = print_endline (string_of_int number_of_rolls)
+
+let () = print_bytes hash 
+
+
+let x = Roll_selection_formula.get_roll_number 20 30 10 4.0
+
+let () = print_endline (string_of_int x)
