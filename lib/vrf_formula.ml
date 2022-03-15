@@ -12,15 +12,15 @@ let compare_two_hash first_hash second_hash =
 (* Generate verifiable random output *)
 let vrf_generation secret_key msg = 
   let signed_message = Ed25519_signature.signature secret_key msg in
-  let hash = Hacl.SHA2_256.hash signed_message in
-  let () = print_bytes signed_message in
-  (signed_message, hash)
+  (* The proof to determine whether this signature is valid or not *)
+  let proof = Hacl.SHA2_256.hash signed_message in
+  (signed_message, proof)
 
 
 (* Verify the random output *)
-let verify public_key message (Vrf_output (signed_message, hash)) = 
+let verify public_key message (Vrf_output (signed_message, proof)) = 
   if (Ed25519_signature.status_of_signature public_key message signed_message) then
-    compare_two_hash (Hacl.SHA2_256.hash signed_message) hash
+    compare_two_hash (Hacl.SHA2_256.hash signed_message) proof
   else false
 
    
