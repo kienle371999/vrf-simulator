@@ -1,5 +1,5 @@
 # Verifiable Random Function Simulator
-Verifiable Random Funtion Simulator
+
 
 This project implements a simulator to write our blockchain algorithm, represented in the consensus proposal [*Some Adjustments to Candidates Selection in Tezos Blockchain*][paper].
 
