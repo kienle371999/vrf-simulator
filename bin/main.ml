@@ -27,7 +27,7 @@ let node3 : node_params = {
   roll = 10
 }
 
-let teta = 32
+let teta = 30
 
 let total_rolls = 40
 
@@ -35,7 +35,7 @@ let node_params_array = node1 :: node2 :: node3 :: []
 
 let seed = "MoGkSxzJjv6bt4NvO8Fr"
 
-let role = "proposer" 
+let role = "endorser" 
 
 
 (* let () = print_endline node1.secret_key
