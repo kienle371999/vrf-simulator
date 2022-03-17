@@ -14,7 +14,7 @@ let rec print_roll_number param_elements seed teta role total_rolls =
     let number_of_rolls, _ = 
       Roll_selection_formula.select_roll_of_each_node (Bytes.of_string secret_key) seed teta role roll total_rolls 
     in
-      printf "----- Node %i has %i rolls in this committee to select %s \n" index number_of_rolls role;
+      printf "Node %i has %i rolls in this committee to select %s \n" index number_of_rolls role;
       print_roll_number remain_elements seed teta role total_rolls
 
 

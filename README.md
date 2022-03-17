@@ -9,11 +9,11 @@ This project implements a simulator to write our blockchain algorithm, represent
 Install opam 2.0+ and then off you go:
 
 ```console
-$ eval $(opam env)
-$ opam install . --deps-only
-$ eval $(opam env)
-$ dune build ./src/bin/main.exe
-$ dune exec ./src/bin/main.exe
+$ eval $(opam env) # Navigate to the environment variables set
+$ opam install . --deps-only # Install libraries in vrf_simulator.opam
+$ eval $(opam env) # Apply the installed libraries
+$ dune build ./src/bin/main.exe # Build the Ocaml project
+$ dune exec ./src/bin/main.exe # Run the Ocaml project
 ```
 
 ## Customize the number of exsiting nodes in Tezos
@@ -25,9 +25,9 @@ Navigative to `node_data.json` to modify the fundamental parameters and increase
 This example of ultimate result is displayed in terminal as below:
 
 ```console
------ Node 1 has 14 rolls in this committee to select endorser 
------ Node 2 has 7 rolls in this committee to select endorser 
------ Node 3 has 8 rolls in this committee to select endorser 
+Node 1 has 14 rolls in this committee to select endorser 
+Node 2 has 7 rolls in this committee to select endorser 
+Node 3 has 8 rolls in this committee to select endorser 
 ```
 
 
