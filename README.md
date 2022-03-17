@@ -1,5 +1,6 @@
 # Verifiable Random Function Simulator
 
+![Pipeline status](https://gitlab.com/nomadic-labs/tenderbake-simulator/badges/master/pipeline.svg)
 
 This project implements a simulator to write our blockchain algorithm, represented in the consensus proposal [*Some Adjustments to Candidates Selection in Tezos Blockchain*][paper].
 

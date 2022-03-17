@@ -1,0 +1,24 @@
+{
+    "title": "All nodes are active in Tezos networks",
+    "seed": "MoGkSxzJjv6bt4NvO8Fr",
+    "teta": 30,
+    "total_rolls": 40,
+    "role": "endorser",
+    "data": [
+        {
+            "index": 1,
+            "secret_key": "JtOTUuq71msxVEfaT4BqrZOtuLoXatv6",
+            "roll": 20
+        },
+        {
+            "index": 2,
+            "secret_key": "paA5lVYhMk3xPcSSgZzmOBmg9NrGZtJY",
+            "roll": 10
+        },
+        {
+            "index": 3,
+            "secret_key": "LQlK4v4plTxBUwCxIuMyQf5LRAYjlMvZ",
+            "roll": 10
+        }
+    ]
+}
