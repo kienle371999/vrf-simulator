@@ -6,7 +6,7 @@ This project implements a simulator to write our blockchain algorithm, represent
 
 ## Build With Opam
 
-Install opam 2.0+ and then o you go:
+Install opam 2.0+ and then off you go:
 
 ```console
 $ eval $(opam env)
