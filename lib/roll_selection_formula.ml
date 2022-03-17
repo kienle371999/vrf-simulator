@@ -1,14 +1,12 @@
 (* Build the algorithm to calculate selected rolls in committees  *)
 
-open Printf;;
+
 open Vrf_formula;;
 
 
 (* Get the number of rolls belonging to each node *)
 let get_roll_number integer_message bit_length w p =
   let input_number = Int.to_float integer_message /. (Util_calculation.pow 2. bit_length) in
-  let () =  printf "Integer Message: %i \n" integer_message in
-  let () = printf "Bit Length: %i \n" bit_length in
   let terminal = ref (-1) in
   try 
     for i = 0 to w do
