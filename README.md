@@ -9,11 +9,16 @@ This project implements a simulator to write our blockchain algorithm, represent
 Install opam 2.0+ and then off you go:
 
 ```console
-$ eval $(opam env) # Navigate to the environment variables set
-$ opam install . --deps-only # Install libraries in vrf_simulator.opam
-$ eval $(opam env) # Apply the installed libraries
-$ dune build ./src/bin/main.exe # Build the Ocaml project
-$ dune exec ./src/bin/main.exe # Run the Ocaml project
+$ # Navigate to the environment variables set
+$ eval $(opam env) 
+$ # Install libraries in vrf_simulator.opam
+$ opam install . --deps-only 
+$ # Apply the installed libraries
+$ eval $(opam env)
+$ # Build the Ocaml project
+$ dune build ./src/bin/main.exe
+$ # Run the Ocaml project 
+$ dune exec ./src/bin/main.exe 
 ```
 
 ## Customize the number of exsiting nodes in Tezos
