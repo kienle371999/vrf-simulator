@@ -43,7 +43,8 @@ Factorial Function is True
 Power Function is True 
 Combination Function is True 
 Binomial Distribution Function is True 
-Bit Length Function is True
+Bit Length Function is True 
+Verify Function in Role Selection Formula is False
 ```
 
 ## Customize the number of exsiting nodes in Tezos
