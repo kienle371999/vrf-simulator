@@ -1,2 +1,3 @@
 (test
- (name vrf_simulator))
+ (name test_vrf_simulator)
+ (libraries vrf_simulator))

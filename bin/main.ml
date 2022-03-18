@@ -30,9 +30,3 @@ let () =
   print_roll_number deserialized_nodes seed teta role total_rolls
 
 
-  
-
-
-
-
-
