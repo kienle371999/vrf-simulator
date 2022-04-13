@@ -1,4 +1,5 @@
 (executable
  (public_name vrf_simulator)
  (name main)
- (libraries vrf_simulator))
+ (libraries vrf_simulator)
+ (modes byte exe))
